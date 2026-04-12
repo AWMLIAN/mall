@@ -45,9 +45,12 @@ redis:
     authCode: 'ums:authCode'
     orderId: 'oms:orderId'
     member: 'ums:member'
+    nullValue: 'isNull:value'
+    brandId: 'pms:brandId'
   expire:
     authCode: 90 # 验证码超期时间
     common: 86400 # 24小时
+    break: 100 # 缓存击穿设置时间
 
 mongo:
   insert:
